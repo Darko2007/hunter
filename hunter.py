@@ -58,7 +58,8 @@ Ingrese el usuario que quiere rastrear.'''
                 print Fore.GREEN + '[*]El usuario "' + usuario + '" existe en Twitter. Consulte la siguiente url: ' + url
             else:
                 print Fore.RED +  '[*]El usuario "' + usuario + '" no existe en Twitter.'
-        print Fore.YELLOW + '[*]Ha ocurrido un error al consultar si el usuario "' + usuario + '" existe en Twitter.'
+        except:
+            print Fore.YELLOW + '[*]Ha ocurrido un error al consultar si el usuario "' + usuario + '" existe en Twitter.'
 
 hunter()
 
